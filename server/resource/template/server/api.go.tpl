@@ -44,7 +44,7 @@ func ({{.Abbreviation}}Api *{{.StructName}}Api) Create{{.StructName}}(c *gin.Con
 // @accept application/json
 // @Produce application/json
 // @Param data body autocode.{{.StructName}} true "删除{{.StructName}}"
-// @Success 200 {string} string "{"success":true,"data":{},"msg":"删除成功"}"
+// @Success 200 {string} string "{"success":true,"data":{},"msg":"Deleted successfully"}"
 // @Router /{{.Abbreviation}}/delete{{.StructName}} [delete]
 func ({{.Abbreviation}}Api *{{.StructName}}Api) Delete{{.StructName}}(c *gin.Context) {
 	var {{.Abbreviation}} autocode.{{.StructName}}
@@ -53,7 +53,7 @@ func ({{.Abbreviation}}Api *{{.StructName}}Api) Delete{{.StructName}}(c *gin.Con
         global.GVA_LOG.Error("删除失败!", zap.Error(err))
 		response.FailWithMessage("删除失败", c)
 	} else {
-		response.OkWithMessage("删除成功", c)
+		response.OkWithMessage("Deleted successfully", c)
 	}
 }
 
@@ -64,7 +64,7 @@ func ({{.Abbreviation}}Api *{{.StructName}}Api) Delete{{.StructName}}(c *gin.Con
 // @accept application/json
 // @Produce application/json
 // @Param data body request.IdsReq true "批量删除{{.StructName}}"
-// @Success 200 {string} string "{"success":true,"data":{},"msg":"批量删除成功"}"
+// @Success 200 {string} string "{"success":true,"data":{},"msg":"批量Deleted successfully"}"
 // @Router /{{.Abbreviation}}/delete{{.StructName}}ByIds [delete]
 func ({{.Abbreviation}}Api *{{.StructName}}Api) Delete{{.StructName}}ByIds(c *gin.Context) {
 	var IDS request.IdsReq
@@ -73,7 +73,7 @@ func ({{.Abbreviation}}Api *{{.StructName}}Api) Delete{{.StructName}}ByIds(c *gi
         global.GVA_LOG.Error("批量删除失败!", zap.Error(err))
 		response.FailWithMessage("批量删除失败", c)
 	} else {
-		response.OkWithMessage("批量删除成功", c)
+		response.OkWithMessage("批量Deleted successfully", c)
 	}
 }
 

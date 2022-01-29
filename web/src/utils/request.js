@@ -93,7 +93,7 @@ service.interceptors.response.use(
           dangerouslyUseHTMLString: true,
           distinguishCancelAndClose: true,
           confirmButtonText: '清理缓存',
-          cancelButtonText: '取消'
+          cancelButtonText: 'Cancel'
         })
           .then(() => {
             const userStore = useUserStore()
@@ -110,7 +110,7 @@ service.interceptors.response.use(
           dangerouslyUseHTMLString: true,
           distinguishCancelAndClose: true,
           confirmButtonText: '我知道了',
-          cancelButtonText: '取消'
+          cancelButtonText: 'Cancel'
         })
         break
     }

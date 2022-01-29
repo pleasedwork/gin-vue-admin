@@ -248,7 +248,7 @@ const closeDialog = () => {
   dialogFormVisible.value = false
   apiDialogFlag.value = false
 }
-// 确定弹窗
+// OK弹窗
 
 const enterDialog = () => {
   if (form.value.authorityId === '0') {

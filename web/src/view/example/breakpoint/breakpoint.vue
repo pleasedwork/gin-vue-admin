@@ -112,7 +112,7 @@ const choseFile = async(e) => {
 }
 
 const getFile = () => {
-  // 确定按钮
+  // OK按钮
   if (file.value === null) {
     ElMessage('请先上传文件')
     return

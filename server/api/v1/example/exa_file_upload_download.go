@@ -53,7 +53,7 @@ func (u *FileUploadAndDownloadApi) DeleteFile(c *gin.Context) {
 		response.FailWithMessage("删除失败", c)
 		return
 	}
-	response.OkWithMessage("删除成功", c)
+	response.OkWithMessage("Deleted successfully", c)
 }
 
 // @Tags ExaFileUploadAndDownload

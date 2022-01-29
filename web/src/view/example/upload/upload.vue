@@ -112,8 +112,8 @@ getTableData()
 
 const deleteFileFunc = async(row) => {
   ElMessageBox.confirm('此操作将永久文件, 是否继续?', '提示', {
-    confirmButtonText: '确定',
-    cancelButtonText: '取消',
+    confirmButtonText: 'OK',
+    cancelButtonText: 'Cancel',
     type: 'warning'
   })
     .then(async() => {
@@ -121,7 +121,7 @@ const deleteFileFunc = async(row) => {
       if (res.code === 0) {
         ElMessage({
           type: 'success',
-          message: '删除成功!'
+          message: 'Deleted successfully!'
         })
         if (tableData.value.length === 1 && page.value > 1) {
           page.value--
@@ -132,7 +132,7 @@ const deleteFileFunc = async(row) => {
     .catch(() => {
       ElMessage({
         type: 'info',
-        message: '已取消删除'
+        message: '已Cancel删除'
       })
     })
 }

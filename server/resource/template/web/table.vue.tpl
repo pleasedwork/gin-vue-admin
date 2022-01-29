@@ -31,10 +31,10 @@
         <div class="gva-btn-list">
             <el-button size="mini" type="primary" icon="plus" @click="openDialog">新增</el-button>
             <el-popover v-model:visible="deleteVisible" placement="top" width="160">
-            <p>确定要删除吗？</p>
+            <p>OK要删除吗？</p>
             <div style="text-align: right; margin-top: 8px;">
-                <el-button size="mini" type="text" @click="deleteVisible = false">取消</el-button>
-                <el-button size="mini" type="primary" @click="onDelete">确定</el-button>
+                <el-button size="mini" type="text" @click="deleteVisible = false">Cancel</el-button>
+                <el-button size="mini" type="primary" @click="onDelete">OK</el-button>
             </div>
             <template #reference>
                 <el-button icon="delete" size="mini" style="margin-left: 10px;" :disabled="!multipleSelection.length">删除</el-button>
@@ -239,9 +239,9 @@ const handleSelectionChange = (val) => {
 
 // 删除行
 const deleteRow = (row) => {
-    ElMessageBox.confirm('确定要删除吗?', '提示', {
-        confirmButtonText: '确定',
-        cancelButtonText: '取消',
+    ElMessageBox.confirm('OK要删除吗?', '提示', {
+        confirmButtonText: 'OK',
+        cancelButtonText: 'Cancel',
         type: 'warning'
     }).then(() => {
             delete{{.StructName}}Func(row)
@@ -270,7 +270,7 @@ const onDelete = async() => {
       if (res.code === 0) {
         ElMessage({
           type: 'success',
-          message: '删除成功'
+          message: 'Deleted successfully'
         })
         if (tableData.value.length === ids.length && page.value > 1) {
           page.value--
@@ -300,7 +300,7 @@ const delete{{.StructName}}Func = async (row) => {
     if (res.code === 0) {
         ElMessage({
                 type: 'success',
-                message: '删除成功'
+                message: 'Deleted successfully'
             })
             if (tableData.value.length === 1 && page.value > 1) {
             page.value--
@@ -341,7 +341,7 @@ const closeDialog = () => {
         {{- end }}
         }
 }
-// 弹窗确定
+// 弹窗OK
 const enterDialog = async () => {
       let res
       switch (type.value) {

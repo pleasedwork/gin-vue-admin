@@ -47,7 +47,7 @@ func (s *OperationRecordApi) DeleteSysOperationRecord(c *gin.Context) {
 		global.GVA_LOG.Error("删除失败!", zap.Error(err))
 		response.FailWithMessage("删除失败", c)
 	} else {
-		response.OkWithMessage("删除成功", c)
+		response.OkWithMessage("Deleted successfully", c)
 	}
 }
 
@@ -66,7 +66,7 @@ func (s *OperationRecordApi) DeleteSysOperationRecordByIds(c *gin.Context) {
 		global.GVA_LOG.Error("批量删除失败!", zap.Error(err))
 		response.FailWithMessage("批量删除失败", c)
 	} else {
-		response.OkWithMessage("批量删除成功", c)
+		response.OkWithMessage("批量Deleted successfully", c)
 	}
 }
 

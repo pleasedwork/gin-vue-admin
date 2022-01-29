@@ -49,7 +49,7 @@ func (autoCodeExampleApi *AutoCodeExampleApi) DeleteAutoCodeExample(c *gin.Conte
 		global.GVA_LOG.Error("删除失败!", zap.Error(err))
 		response.FailWithMessage("删除失败", c)
 	} else {
-		response.OkWithMessage("删除成功", c)
+		response.OkWithMessage("Deleted successfully", c)
 	}
 }
 

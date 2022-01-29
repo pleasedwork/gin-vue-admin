@@ -50,10 +50,10 @@
           <template #default="scope">
             <el-button size="small" type="text" icon="edit" @click="updateSysDictionaryDetailFunc(scope.row)">变更</el-button>
             <el-popover v-model:visible="scope.row.visible" placement="top" width="160">
-              <p>确定要删除吗？</p>
+              <p>OK要删除吗？</p>
               <div style="text-align: right; margin-top: 8px;">
-                <el-button size="mini" type="text" @click="scope.row.visible = false">取消</el-button>
-                <el-button type="primary" size="mini" @click="deleteSysDictionaryDetailFunc(scope.row)">确定</el-button>
+                <el-button size="mini" type="text" @click="scope.row.visible = false">Cancel</el-button>
+                <el-button type="primary" size="mini" @click="deleteSysDictionaryDetailFunc(scope.row)">OK</el-button>
               </div>
               <template #reference>
                 <el-button type="text" icon="delete" size="mini">删除</el-button>
@@ -241,7 +241,7 @@ const deleteSysDictionaryDetailFunc = async(row) => {
   if (res.code === 0) {
     ElMessage({
       type: 'success',
-      message: '删除成功'
+      message: 'Deleted successfully'
     })
     if (tableData.value.length === 1 && page.value > 1) {
       page.value--

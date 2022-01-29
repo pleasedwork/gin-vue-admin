@@ -92,7 +92,7 @@ var doc = `{
                 ],
                 "responses": {
                     "200": {
-                        "description": "{\"success\":true,\"data\":{},\"msg\":\"删除成功\"}",
+                        "description": "{\"success\":true,\"data\":{},\"msg\":\"Deleted successfully\"}",
                         "schema": {
                             "type": "string"
                         }
@@ -130,7 +130,7 @@ var doc = `{
                 ],
                 "responses": {
                     "200": {
-                        "description": "{\"success\":true,\"data\":{},\"msg\":\"删除成功\"}",
+                        "description": "{\"success\":true,\"data\":{},\"msg\":\"Deleted successfully\"}",
                         "schema": {
                             "type": "string"
                         }
@@ -385,7 +385,7 @@ var doc = `{
                 ],
                 "responses": {
                     "200": {
-                        "description": "{\"success\":true,\"data\":{},\"msg\":\"删除成功\"}",
+                        "description": "{\"success\":true,\"data\":{},\"msg\":\"Deleted successfully\"}",
                         "schema": {
                             "type": "string"
                         }
@@ -575,7 +575,7 @@ var doc = `{
                 ],
                 "responses": {
                     "200": {
-                        "description": "删除成功!",
+                        "description": "Deleted successfully!",
                         "schema": {
                             "$ref": "#/definitions/response.Response"
                         }
@@ -884,7 +884,7 @@ var doc = `{
                 ],
                 "responses": {
                     "200": {
-                        "description": "{\"success\":true,\"data\":{},\"msg\":\"删除成功\"}",
+                        "description": "{\"success\":true,\"data\":{},\"msg\":\"Deleted successfully\"}",
                         "schema": {
                             "type": "string"
                         }
@@ -1352,7 +1352,7 @@ var doc = `{
                 ],
                 "responses": {
                     "200": {
-                        "description": "{\"success\":true,\"data\":{},\"msg\":\"删除成功\"}",
+                        "description": "{\"success\":true,\"data\":{},\"msg\":\"Deleted successfully\"}",
                         "schema": {
                             "type": "string"
                         }
@@ -1651,7 +1651,7 @@ var doc = `{
                 ],
                 "responses": {
                     "200": {
-                        "description": "{\"success\":true,\"data\":{},\"msg\":\"删除成功\"}",
+                        "description": "{\"success\":true,\"data\":{},\"msg\":\"Deleted successfully\"}",
                         "schema": {
                             "type": "string"
                         }
@@ -1761,7 +1761,7 @@ var doc = `{
                 ],
                 "responses": {
                     "200": {
-                        "description": "{\"success\":true,\"data\":{},\"msg\":\"缓存切片删除成功\"}",
+                        "description": "{\"success\":true,\"data\":{},\"msg\":\"缓存切片Deleted successfully\"}",
                         "schema": {
                             "type": "string"
                         }
@@ -1987,7 +1987,7 @@ var doc = `{
                 ],
                 "responses": {
                     "200": {
-                        "description": "{\"success\":true,\"data\":{},\"msg\":\"删除成功\"}",
+                        "description": "{\"success\":true,\"data\":{},\"msg\":\"Deleted successfully\"}",
                         "schema": {
                             "type": "string"
                         }
@@ -2285,7 +2285,7 @@ var doc = `{
                 ],
                 "responses": {
                     "200": {
-                        "description": "{\"success\":true,\"data\":{},\"msg\":\"删除成功\"}",
+                        "description": "{\"success\":true,\"data\":{},\"msg\":\"Deleted successfully\"}",
                         "schema": {
                             "type": "string"
                         }
@@ -2553,7 +2553,7 @@ var doc = `{
                 ],
                 "responses": {
                     "200": {
-                        "description": "{\"success\":true,\"data\":{},\"msg\":\"删除成功\"}",
+                        "description": "{\"success\":true,\"data\":{},\"msg\":\"Deleted successfully\"}",
                         "schema": {
                             "type": "string"
                         }
@@ -2833,7 +2833,7 @@ var doc = `{
                 ],
                 "responses": {
                     "200": {
-                        "description": "{\"success\":true,\"data\":{},\"msg\":\"删除成功\"}",
+                        "description": "{\"success\":true,\"data\":{},\"msg\":\"Deleted successfully\"}",
                         "schema": {
                             "type": "string"
                         }
@@ -2871,7 +2871,7 @@ var doc = `{
                 ],
                 "responses": {
                     "200": {
-                        "description": "{\"success\":true,\"data\":{},\"msg\":\"批量删除成功\"}",
+                        "description": "{\"success\":true,\"data\":{},\"msg\":\"批量Deleted successfully\"}",
                         "schema": {
                             "type": "string"
                         }
@@ -3315,7 +3315,7 @@ var doc = `{
                 ],
                 "responses": {
                     "200": {
-                        "description": "{\"success\":true,\"data\":{},\"msg\":\"删除成功\"}",
+                        "description": "{\"success\":true,\"data\":{},\"msg\":\"Deleted successfully\"}",
                         "schema": {
                             "type": "string"
                         }

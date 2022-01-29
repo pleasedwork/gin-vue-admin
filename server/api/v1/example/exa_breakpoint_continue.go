@@ -137,6 +137,6 @@ func (u *FileUploadAndDownloadApi) RemoveChunk(c *gin.Context) {
 		global.GVA_LOG.Error(err.Error(), zap.Error(err))
 		response.FailWithMessage(err.Error(), c)
 	} else {
-		response.OkWithMessage("缓存切片删除成功", c)
+		response.OkWithMessage("缓存切片Deleted successfully", c)
 	}
 }

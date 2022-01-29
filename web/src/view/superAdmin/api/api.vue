@@ -31,10 +31,10 @@
       <div class="gva-btn-list">
         <el-button size="mini" type="primary" icon="plus" @click="openDialog('addApi')">新增</el-button>
         <el-popover v-model:visible="deleteVisible" placement="top" width="160">
-          <p>确定要删除吗？</p>
+          <p>OK要删除吗？</p>
           <div style="text-align: right; margin-top: 8px;">
-            <el-button size="mini" type="text" @click="deleteVisible = false">取消</el-button>
-            <el-button size="mini" type="primary" @click="onDelete">确定</el-button>
+            <el-button size="mini" type="text" @click="deleteVisible = false">Cancel</el-button>
+            <el-button size="mini" type="primary" @click="onDelete">OK</el-button>
           </div>
           <template #reference>
             <el-button icon="delete" size="mini" :disabled="!apis.length" style="margin-left: 10px;">删除</el-button>
@@ -346,7 +346,7 @@ const enterDialog = async() => {
           {
             ElMessage({
               type: 'error',
-              message: '未知操作',
+              message: 'Unknown Operation',
               showClose: true
             })
           }
@@ -358,8 +358,8 @@ const enterDialog = async() => {
 
 const deleteApiFunc = async(row) => {
   ElMessageBox.confirm('此操作将永久删除所有角色下该api, 是否继续?', '提示', {
-    confirmButtonText: '确定',
-    cancelButtonText: '取消',
+    confirmButtonText: 'OK',
+    cancelButtonText: 'Cancel',
     type: 'warning'
   })
     .then(async() => {
@@ -367,7 +367,7 @@ const deleteApiFunc = async(row) => {
       if (res.code === 0) {
         ElMessage({
           type: 'success',
-          message: '删除成功!'
+          message: 'Deleted successfully!'
         })
         if (tableData.value.length === 1 && page.value > 1) {
           page.value--

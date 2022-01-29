@@ -22,7 +22,7 @@ export const create{{.StructName}} = (data) => {
 // @accept application/json
 // @Produce application/json
 // @Param data body model.{{.StructName}} true "删除{{.StructName}}"
-// @Success 200 {string} string "{"success":true,"data":{},"msg":"删除成功"}"
+// @Success 200 {string} string "{"success":true,"data":{},"msg":"Deleted successfully"}"
 // @Router /{{.Abbreviation}}/delete{{.StructName}} [delete]
 export const delete{{.StructName}} = (data) => {
   return service({
@@ -38,7 +38,7 @@ export const delete{{.StructName}} = (data) => {
 // @accept application/json
 // @Produce application/json
 // @Param data body request.IdsReq true "批量删除{{.StructName}}"
-// @Success 200 {string} string "{"success":true,"data":{},"msg":"删除成功"}"
+// @Success 200 {string} string "{"success":true,"data":{},"msg":"Deleted successfully"}"
 // @Router /{{.Abbreviation}}/delete{{.StructName}} [delete]
 export const delete{{.StructName}}ByIds = (data) => {
   return service({
